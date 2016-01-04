@@ -1,4 +1,19 @@
 # LCD Response Time Tester
-# 液晶显示器响应时间测试
-Care about your monitor's screen response time? Maybe it's not im your manual or it's a fake number! Try this little tool!
-想知道显示器的响应时间吗？说明书上可能没有写，甚至是个假的数字，试试这个小工具！
+Care about your monitor's response time? Maybe it's not im your manual or it's a fake number! Try this little tool!
+想知道你的显示器的响应时间吗？说明书上可能没有写，甚至是个假的数字，试试这个小工具！
+
+Equipment(器材)
+===============
+液晶显示器或液晶电视(被测机)，笔记本电脑(运行此工具)，数据线(VGA/HDMI)，高速运动相机
+
+Introduction(原理简介)
+======================
+其实本工具只是一个毫秒计数器，在笔记本电脑的浏览器上运行test.html，同时用数据线连接笔记本电脑和液晶显示器，开始计数后，高速运动相机同时拍下笔记本电脑和液晶显示器上的数字，可根据两个数字的差值作计算。
+
+Important(特别注意)
+===================
+这里所说的响应时间不是灰阶响应，这个响应时间应该是输入响应+灰阶响应。灰阶响应一般在6ms以下，可以呼略不计。但有的液晶显示器/电视的输入响应高达100+ms，啥好网速都不如一台好显示器～
+
+Accuracy(准确性)
+===============
+其实本工具并不能测出液晶的真实响应时间，假设笔记本电脑显示屏的响应时间很低，且本工具只能测出一个相对于笔记本电脑显示屏响应时间的差值，在其它设备不变的情况下，可以测出多台液晶显示器的响应时间区别。
