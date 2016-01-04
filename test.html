@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>LCD Response Time Tester</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script type="text/javascript" src="angular.min.js"></script>
+  <script type="text/javascript" src="angular-timer-all.min.js"></script>
+</head>
+<body ng-app="timer">
+  <section style="margin-left:100px;">
+    <p><timer id="timer" autostart="false" style="font-size:350px;"></timer></p>
+    <button class="btn" onclick="document.getElementById('timer').start();" type="button">Start</button>
+    <button class="btn" onclick="document.getElementById('timer').resume();" type="button">Resume</button>
+    <button class="btn" onclick="document.getElementById('timer').stop();" type="button">Stop</button>
+  </section>
+</body>
+</html>
